@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react"
 import { NewTodoForm } from "./NewTodoForm"
 import "./styles.css"
@@ -20,10 +19,7 @@ export default function App() {
     setTodos((currentTodos) => {
       return [
         ...currentTodos,
-        {
-          id: crypto.randomUUID(), title, completed:
-            false
-        },
+        { id: crypto.randomUUID(), title, completed: false },
       ]
     })
   }
